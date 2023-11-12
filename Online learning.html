@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Lato">
+    <title>Social Media</title>
+</head>
+<body>
+    <div class="moving-image"></div>
+    <div class="facebook-container">
+        <div class="facebook-sidebar">
+            <nav class = "element-navigation">
+                <div class="element-list">
+                    <div class="element1" id = "ele1">Teddy</div>
+                    <div class="element2" id = "ele2">Find friends</div>
+                    <div class="element3">Memories</div>
+                    <div class="element4">Saved</div>
+                    <div class="element5 hidden">Groups</div>
+                    <div class="element6 hidden">Video</div>
+                    <div class="element7 hidden">Marketplace</div>
+                    <div class="element8 hidden">Feeds</div>
+                    <button id="show-more-button">Show more</button>
+                </div>
+            </nav>
+            <div class = "games">
+                <h3>Play games...</h3>
+                <a href="https://poki.com/en/g/subway-surfers">
+                  <img src="./img/game1.jpg" alt="Subway surfers" class= "game-icon">
+                </a>
+                <a href="https://poki.com/en/g/bubble-shooter-lak">
+                  <img src="./img/game2.jpg" alt="Bubble Shooter" class= "game-icon">
+                </a>
+                <a href="https://poki.com/en/g/infinity-loop">
+                  <img src="./img/game3.jpg" alt="Infinite loop" class= "game-icon">
+                </a>
+                <a href="https://poki.com/en/g/word-city-crossed">
+                  <img src="./img/game4.jpg" alt="Word City Crossed" class= "game-icon">
+                </a>
+            </div>
+            <div class = "favorite">
+                <h3>Add your favorites:</h3>
+                <ul id = "favList">
+                    <li>Movies</li>
+                    <li>Books</li>
+                    <li>Fictions</li>
+                </ul>
+                <button id="addFav">Add </button>
+            </div>
+        </div>
+        <div class="facebook-feed">
+            <div class="input-block">
+                <input type="text" id="text-input" placeholder="What's on your mind, Teddy?">
+                <div class="file-input-container">
+                    <input type="file" id="image-input">
+                    <label for="image-input" class="custom-file-button">Photos/Image</label>
+                </div>
+                <button id="add-button">Add post</button>
+
+            </div>
+            <div class="text-list" id="text-list">
+                <!-- Displayed text will be added here -->
+            </div>
+        </div>
+        <div class="column3" id = "col3">
+            <!-- Third column content here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

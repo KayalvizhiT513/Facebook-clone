@@ -1,0 +1,433 @@
+/* body, .page-container
+{
+    background-color: lightcyan;
+}
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    font-style: 'Lato', sans-serif;
+}
+
+.column1, .column, .column3 {
+    flex: 1;
+    margin: 0 10px;
+    // background-image: linear-gradient(darkslateblue, lightskyblue); 
+    background-image: linear-gradient(silver, seashell);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 4px 4px 10px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.facebook-container {
+    display: flex;
+    height: 100%;
+}
+
+.facebook-sidebar {
+    width: 250px;
+    background-color: #3b5998;
+    color: #fff;
+    /* Add styles for sidebar */
+}
+
+.facebook-main {
+    flex: 1;
+    padding: 20px;
+}
+
+.facebook-header {
+    background-color: #fff;
+    padding: 10px;
+    /* Add styles for header */
+}
+
+.facebook-feed {
+    background-color: #fff;
+    padding: 20px;
+    /* Add styles for feed */
+}
+
+
+/* Style for the navigation area */
+.element-navigation {
+    border-radius: 7px;
+    background-image: darkslateblue;
+    padding: 10px;
+}
+
+.element-navigation .element-list {
+    /* List styles here */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.element-navigation .element-list li {
+    padding: 10px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.element-navigation .element-list li:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.element1, .element2,.element3,.element4,.element5,.element6,.element7,.element8 {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0px;
+    background-color: #ffffe;
+}
+
+.element1:hover, .element2:hover, .element3:hover, .element4:hover, .element5:hover, .element6:hover, .element7:hover, .element8:hover
+{
+    background-color: silver; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+#show-more-button #show-less-button{
+    display: block;
+    margin-top: 10px;
+    color: #000;
+    background-color: #ffff;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/* ... (column styles) ... */
+.input-block {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #ffff;
+    margin-bottom: 20px;
+}
+
+.input-block input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: silver;
+    border-radius: 7px;
+}
+
+.input-block button {
+    padding: 10px 20px;
+    background-color: silver;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.text-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.text-list p {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.text-block {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-block p {
+    margin: 0;
+}
+
+.text-block button {
+    background-color: silver;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.comment-block {
+    position: relative;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(silver, seashell);
+    border-radius: 8px; /* Rounded edges for comment blocks */
+    padding: 15px; /* Add padding for spacing */
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.comment-block .text {
+    margin: 0;
+}
+
+.comment-block .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comment-block .actions .cross-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    color: #dc3545;
+    cursor: pointer;
+}
+
+.comment-block .emoji-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comment-block .emoji-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 24px;
+    transition: transform 0.3s, scale 0.3s;
+}
+
+.comment-block .emoji-buttons button.rotating {
+    transform: rotate(0);
+}
+
+.comment-block .emoji-buttons button.selected {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.comment-block .image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.file-input-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.custom-file-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: silver;
+    color: #000;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* Hide the actual file input */
+#image-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: #ced4da;
+}
+/* ...(welcome styles)... */
+.bouncing-image {
+    width: 100px;
+    height: 100px;
+    animation: bounce 2s infinite; /* Bounce animation */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(200px); /* Start and end position */
+    }
+    50% {
+        transform: translateY(0px); /* Midway position (bounce up) */
+    }
+}
+/* ... (User profile styles) ... */
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.user-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-quote {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Style for the user details table */
+.user-details {
+    width: 100%;
+    max-width: 300px;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.user-details td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.user-details .label {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    width: 40%;
+}
+/* ... (find friends styles) ... */
+.search-box {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+}
+
+.search-input {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.search-button {
+    background-color: #ced4da;
+    color: #fff;
+    border: 2px solid;
+    border-color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #6c757d;
+}
+
+.game-icon{
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    box-shadow: 2px 2px 4px gray;
+}
+/* Styles for the user form */
+.user-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.user-form h3 {
+    margin-bottom: 10px;
+}
+
+.user-form form {
+    width: 100%;
+    max-width: 300px;
+}
+
+.user-form label,
+.user-form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Hide the form initially */
+.hidden {
+    display: none;
+}
+
+[type="text"] {
+    font-family: 'Tangerine', sans-serif;
+}
+
+.moving-image {
+    width: 30px;
+    height: 30px;
+    background-image: url('./img/dice.png');
+    background-size: cover;
+    position: absolute;
+    animation: moveImage 30s linear infinite;
+}
+
+@keyframes moveImage {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 50px);
+    }
+    50% {
+        top: calc(100% - 50px);
+        left: calc(100% - 50px);
+    }
+    75% {
+        top: calc(100% - 50px);
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
